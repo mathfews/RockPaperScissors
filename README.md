@@ -3,3 +3,4 @@
 - [ ] Checking winners
 - [ ] Scoreboard
 - [ ] Difficulty Levels 
+![Rock, Paper and Scissors](https://media2.dev.to/dynamic/image/width=1600,height=900,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fthepracticaldev.s3.amazonaws.com%2Fi%2Fvg6mmkv6hipscpi7pl0h.png)
