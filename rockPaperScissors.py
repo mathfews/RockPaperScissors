@@ -74,7 +74,7 @@ def whoWins(playerChoose):
             wait1()
             print(scoreboard)
           print("Thanks for playing!")
-          exit()
+
     elif computerChoose == "Paper":
       print(f"{Fore.YELLOW}{Style.BRIGHT}You won{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}paper{Style.RESET_ALL}!")
       globals()["playerScore"] += 1
@@ -96,7 +96,7 @@ def whoWins(playerChoose):
             wait1()
             print(scoreboard)
           print("Thanks for playing!")
-          exit()
+
     elif computerChoose == "Scissors":
       print(f"{Fore.YELLOW}{Style.BRIGHT}Draw{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}scissors{Style.RESET_ALL} too!")
       globals()["playerScore"] += 1
@@ -119,7 +119,7 @@ def whoWins(playerChoose):
             wait1()
             print(scoreboard)
           print("Thanks for playing!")
-          exit()
+
    if playerChoose == "Paper":
     if computerChoose == "Scissors":
       print(f"{Fore.YELLOW}{Style.BRIGHT}You lose{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}scissors{Style.RESET_ALL}!")
@@ -142,7 +142,7 @@ def whoWins(playerChoose):
             wait1()
             print(scoreboard)
           print("Thanks for playing!")
-          exit()
+
     elif computerChoose == "Rock":
       print(f"{Fore.YELLOW}{Style.BRIGHT}You won{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}rock{Style.RESET_ALL}!")
       globals()["playerScore"] += 1
@@ -164,7 +164,7 @@ def whoWins(playerChoose):
             wait1()
             print(scoreboard)
           print("Thanks for playing!")
-          exit()
+
     elif computerChoose == "Paper":
       print(f"{Fore.YELLOW}{Style.BRIGHT}Draw{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}paper{Style.RESET_ALL} too!")
       globals()["computerScore"] += 1
@@ -187,7 +187,7 @@ def whoWins(playerChoose):
             wait1()
             print(scoreboard)
           print("Thanks for playing!")
-          exit()
+
    if playerChoose == "Rock":
     if computerChoose == "Paper":
       print(f"{Fore.YELLOW}{Style.BRIGHT}You lose{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}paper{Style.RESET_ALL}!")
@@ -210,7 +210,7 @@ def whoWins(playerChoose):
             wait1()
             print(scoreboard)
           print("Thanks for playing!")
-          exit()
+
     elif computerChoose == "Scissors":
       print(f"{Fore.YELLOW}{Style.BRIGHT}You won{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}scissors{Style.RESET_ALL}!")
       globals()["playerScore"] += 1
@@ -232,7 +232,7 @@ def whoWins(playerChoose):
             wait1()
             print(scoreboard)
           print("Thanks for playing!")
-          exit()
+
     elif computerChoose == "Rock":
       print(f"{Fore.YELLOW}{Style.BRIGHT}Draw{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}rock{Style.RESET_ALL} too!")
       globals()["playerScore"] += 1
@@ -255,7 +255,7 @@ def whoWins(playerChoose):
             wait1()
             print(scoreboard)
           print("Thanks for playing!")
-          exit()
+
 def impossibleToWin(playerChoose):
   if playerChoose == "Rock":
     computerChoose = "Paper"
@@ -279,7 +279,6 @@ def impossibleToWin(playerChoose):
           wait1()
           print(scoreboard)
         print("Thanks for playing!")
-        exit()
   if playerChoose == "Paper":
     computerChoose = "Scissors"
     print(f"{Fore.RED}{Style.BRIGHT}You lose{Style.RESET_ALL}, I choose {Fore.RED}{Style.BRIGHT}scissors{Style.RESET_ALL}!")
@@ -302,7 +301,6 @@ def impossibleToWin(playerChoose):
           wait1()
           print(scoreboard)
         print("Thanks for playing!")
-        exit()
   if playerChoose == "Scissors":
     computerChoose = "Rock"
     print(f"{Fore.RED}{Style.BRIGHT}You lose{Style.RESET_ALL}, I choose {Fore.RED}{Style.BRIGHT}rock{Style.RESET_ALL}!")
@@ -325,7 +323,6 @@ def impossibleToWin(playerChoose):
           wait1()
           print(scoreboard)
         print("Thanks for playing!")
-        exit()
 def easyToWin(playerChoose):
   if playerChoose == "Rock":
     computerChoose = "Scissors"
@@ -349,7 +346,6 @@ def easyToWin(playerChoose):
           wait1()
           print(scoreboard)
         print("Thanks for playing!")
-        exit()
   if playerChoose == "Paper":
     computerChoose = "Rock"
     print(f"{Fore.YELLOW}{Style.BRIGHT}You won{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}rock{Style.RESET_ALL}!")
@@ -372,7 +368,6 @@ def easyToWin(playerChoose):
           wait1()
           print(scoreboard)
         print("Thanks for playing!")
-        exit()
   if playerChoose == "Scissors":
     computerChoose = "Paper"
     print(f"{Fore.YELLOW}{Style.BRIGHT}You won{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}rock{Style.RESET_ALL}!")
@@ -395,7 +390,6 @@ def easyToWin(playerChoose):
           wait1()
           print(scoreboard)
         print("Thanks for playing!")
-        exit()
 while level == "n" or level == "normal":
   print("So, let's play! ....")
   wait1()
