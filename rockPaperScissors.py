@@ -48,7 +48,6 @@ def ask(text):
 #     break
 # print("------------------------")
 # wait1()
-level = "n"
 playerScore = 0
 computerScore = 0
 def whoWins(playerChoose):
@@ -56,97 +55,216 @@ def whoWins(playerChoose):
    if playerChoose == "Scissors":
     if computerChoose == "Rock":
       print(f"{Fore.YELLOW}{Style.BRIGHT}You lose{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}rock{Style.RESET_ALL}!")
-      while True:
-        restart = ask("Do you want to play again?(y/n) ")
-        if restart:
-          break
-        if restart == False:
-          print("Thanks for playing")
-          exit()
-    elif computerChoose == "Paper":
-      print(f"{Fore.YELLOW}{Style.BRIGHT}You won{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}paper{Style.RESET_ALL}!")
-      playerScore += 1
+      globals()["computerScore"] += 1
       while True:
         restart = ask("Do you want to play again?(y/n) ")
         if restart:
           break
         elif restart == False:
+          scoreboardAsk = ask("Before you leave, do you want to see the scoreboard?(y/n) ")
+          if scoreboardAsk:
+            print("Okay, I'll show you the scoreboard, wait a minute")
+            scoreboard = f"""
+            ╔════════════════╗
+            ║ 🏆  {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL} ║
+            ╚════════════════╝
+            Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
+            Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
+            """
+            wait1()
+            print(scoreboard)
+          print("Thanks for playing!")
+          exit()
+    elif computerChoose == "Paper":
+      print(f"{Fore.YELLOW}{Style.BRIGHT}You won{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}paper{Style.RESET_ALL}!")
+      globals()["playerScore"] += 1
+      while True:
+        restart = ask("Do you want to play again?(y/n) ")
+        if restart:
+          break
+        elif restart == False:
+          scoreboardAsk = ask("Before you leave, do you want to see the scoreboard?(y/n) ")
+          if scoreboardAsk:
+            print("Okay, I'll show you the scoreboard, wait a minute")
+            scoreboard = f"""
+            ╔════════════════╗
+            ║ 🏆  {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL} ║
+            ╚════════════════╝
+            Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
+            Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
+            """
+            wait1()
+            print(scoreboard)
           print("Thanks for playing!")
           exit()
     elif computerChoose == "Scissors":
       print(f"{Fore.YELLOW}{Style.BRIGHT}Draw{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}scissors{Style.RESET_ALL} too!")
+      globals()["playerScore"] += 1
+      globals()["computerScore"] += 1
       while True:
         restart = ask("Do you want to play again?(y/n) ")
         if restart == True:
           break
         elif restart == False:
+          scoreboardAsk = ask("Before you leave, do you want to see the scoreboard?(y/n) ")
+          if scoreboardAsk:
+            print("Okay, I'll show you the scoreboard, wait a minute")
+            scoreboard = f"""
+            ╔════════════════╗
+            ║ 🏆  {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL} ║
+            ╚════════════════╝
+            Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
+            Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
+            """
+            wait1()
+            print(scoreboard)
           print("Thanks for playing!")
           exit()
    if playerChoose == "Paper":
     if computerChoose == "Scissors":
       print(f"{Fore.YELLOW}{Style.BRIGHT}You lose{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}scissors{Style.RESET_ALL}!")
+      globals()["computerScore"] += 1
       while True:
         restart = ask("Do you want to play again?(y/n) ")
         if restart:
           break
         if restart == False:
-          print("Thanks for playing")
+          scoreboardAsk = ask("Before you leave, do you want to see the scoreboard?(y/n) ")
+          if scoreboardAsk:
+            print("Okay, I'll show you the scoreboard, wait a minute")
+            scoreboard = f"""
+            ╔════════════════╗
+            ║ 🏆  {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL} ║
+            ╚════════════════╝
+            Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
+            Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
+            """
+            wait1()
+            print(scoreboard)
+          print("Thanks for playing!")
           exit()
     elif computerChoose == "Rock":
       print(f"{Fore.YELLOW}{Style.BRIGHT}You won{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}rock{Style.RESET_ALL}!")
+      globals()["playerScore"] += 1
       while True:
         restart = ask("Do you want to play again?(y/n) ")
         if restart:
           break
         elif restart == False:
+          scoreboardAsk = ask("Before you leave, do you want to see the scoreboard?(y/n) ")
+          if scoreboardAsk:
+            print("Okay, I'll show you the scoreboard, wait a minute")
+            scoreboard = f"""
+            ╔════════════════╗
+            ║ 🏆  {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL} ║
+            ╚════════════════╝
+            Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
+            Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
+            """
+            wait1()
+            print(scoreboard)
           print("Thanks for playing!")
           exit()
     elif computerChoose == "Paper":
       print(f"{Fore.YELLOW}{Style.BRIGHT}Draw{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}paper{Style.RESET_ALL} too!")
+      globals()["computerScore"] += 1
+      globals()["playerScore"] += 1
       while True:
         restart = ask("Do you want to play again?(y/n) ")
         if restart == True:
           break
         elif restart == False:
+          scoreboardAsk = ask("Before you leave, do you want to see the scoreboard?(y/n) ")
+          if scoreboardAsk:
+            print("Okay, I'll show you the scoreboard, wait a minute")
+            scoreboard = f"""
+            ╔════════════════╗
+            ║ 🏆  {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL} ║
+            ╚════════════════╝
+            Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
+            Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
+            """
+            wait1()
+            print(scoreboard)
           print("Thanks for playing!")
           exit()
    if playerChoose == "Rock":
     if computerChoose == "Paper":
       print(f"{Fore.YELLOW}{Style.BRIGHT}You lose{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}paper{Style.RESET_ALL}!")
+      globals()["computerScore"] += 1
       while True:
         restart = ask("Do you want to play again?(y/n) ")
         if restart:
           break
         if restart == False:
-          print("Thanks for playing")
+          scoreboardAsk = ask("Before you leave, do you want to see the scoreboard?(y/n) ")
+          if scoreboardAsk:
+            print("Okay, I'll show you the scoreboard, wait a minute")
+            scoreboard = f"""
+            ╔════════════════╗
+            ║ 🏆  {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL} ║
+            ╚════════════════╝
+            Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
+            Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
+            """
+            wait1()
+            print(scoreboard)
+          print("Thanks for playing!")
           exit()
     elif computerChoose == "Scissors":
       print(f"{Fore.YELLOW}{Style.BRIGHT}You won{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}scissors{Style.RESET_ALL}!")
+      globals()["playerScore"] += 1
       while True:
         restart = ask("Do you want to play again?(y/n) ")
         if restart:
           break
         elif restart == False:
+          scoreboardAsk = ask("Before you leave, do you want to see the scoreboard?(y/n) ")
+          if scoreboardAsk:
+            print("Okay, I'll show you the scoreboard, wait a minute")
+            scoreboard = f"""
+            ╔════════════════╗
+            ║ 🏆  {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL} ║
+            ╚════════════════╝
+            Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
+            Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
+            """
+            wait1()
+            print(scoreboard)
           print("Thanks for playing!")
           exit()
     elif computerChoose == "Rock":
       print(f"{Fore.YELLOW}{Style.BRIGHT}Draw{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}rock{Style.RESET_ALL} too!")
+      globals()["playerScore"] += 1
+      globals()["computerScore"] += 1
       while True:
         restart = ask("Do you want to play again?(y/n) ")
         if restart == True:
           break
         elif restart == False:
+          scoreboardAsk = ask("Before you leave, do you want to see the scoreboard?(y/n) ")
+          if scoreboardAsk:
+            print("Okay, I'll show you the scoreboard, wait a minute")
+            scoreboard = f"""
+            ╔════════════════╗
+            ║ 🏆  {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL} ║
+            ╚════════════════╝
+            Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
+            Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
+            """
+            wait1()
+            print(scoreboard)
           print("Thanks for playing!")
           exit()
-while level == n or level == normal:
+while True:
   print("So, let's play! ....")
-  wait1()
+  # wait1()
   print("Rock")
-  wait1()
+  # wait1()
   print("Paper")
-  wait1()
+  # wait1()
   print("Scissors")
-  wait1()
+  # wait1()
   print("Shoot!")
   playerChoose = input("> ")
   whoWins(playerChoose)
