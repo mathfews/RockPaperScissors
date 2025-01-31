@@ -326,6 +326,76 @@ def impossibleToWin(playerChoose):
           print(scoreboard)
         print("Thanks for playing!")
         exit()
+def easyToWin(playerChoose):
+  if playerChoose == "Rock":
+    computerChoose = "Scissors"
+    print(f"{Fore.YELLOW}{Style.BRIGHT}You won{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}Scissors{Style.RESET_ALL}!")
+    globals()["computerScore"] += 1
+    while True:
+      restart = ask("Do you want to play again?(y/n) ")
+      if restart:
+        break
+      elif restart == False:
+        scoreboardAsk = ask("Before you leave, do you want to see the scoreboard?(y/n) ")
+        if scoreboardAsk:
+          print("Okay, I'll show you the scoreboard, wait a minute")
+          scoreboard = f"""
+          ╔════════════════╗
+          ║ 🏆  {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL} ║
+          ╚════════════════╝
+          Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
+          Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
+          """
+          wait1()
+          print(scoreboard)
+        print("Thanks for playing!")
+        exit()
+  if playerChoose == "Paper":
+    computerChoose = "Rock"
+    print(f"{Fore.YELLOW}{Style.BRIGHT}You won{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}rock{Style.RESET_ALL}!")
+    globals()["computerScore"] += 1
+    while True:
+      restart = ask("Do you want to play again?(y/n) ")
+      if restart:
+        break
+      elif restart == False:
+        scoreboardAsk = ask("Before you leave, do you want to see the scoreboard?(y/n) ")
+        if scoreboardAsk:
+          print("Okay, I'll show you the scoreboard, wait a minute")
+          scoreboard = f"""
+          ╔════════════════╗
+          ║ 🏆  {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL} ║
+          ╚════════════════╝
+          Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
+          Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
+          """
+          wait1()
+          print(scoreboard)
+        print("Thanks for playing!")
+        exit()
+  if playerChoose == "Scissors":
+    computerChoose = "Paper"
+    print(f"{Fore.YELLOW}{Style.BRIGHT}You won{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}rock{Style.RESET_ALL}!")
+    globals()["computerScore"] += 1
+    while True:
+      restart = ask("Do you want to play again?(y/n) ")
+      if restart:
+        break
+      elif restart == False:
+        scoreboardAsk = ask("Before you leave, do you want to see the scoreboard?(y/n) ")
+        if scoreboardAsk:
+          print("Okay, I'll show you the scoreboard, wait a minute")
+          scoreboard = f"""
+          ╔════════════════╗
+          ║ 🏆  {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL} ║
+          ╚════════════════╝
+          Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
+          Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
+          """
+          wait1()
+          print(scoreboard)
+        print("Thanks for playing!")
+        exit()
 while level == "n" or level == "normal":
   print("So, let's play! ....")
   wait1()
@@ -350,3 +420,15 @@ while level == "i" or level == "impossible":
   print("Shoot!")
   playerChoose = input("> ")
   impossibleToWin(playerChoose)
+while level == "e" or level == "easy":
+  print("So, let's play! ....")
+  wait1()
+  print("Rock")
+  wait1()
+  print("Paper")
+  wait1()
+  print("Scissors")
+  wait1()
+  print("Shoot!")
+  playerChoose = input("> ")
+  easyToWin(playerChoose)
