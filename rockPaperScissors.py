@@ -9,8 +9,9 @@ rules = [
    f"{Fore.YELLOW}{Style.BRIGHT}Paper beats rock{Style.RESET_ALL} by covering it"
 ]
 possibleMoves = ["Rock", "Paper","Scissors"]
-def wait():
-  time.sleep(0.5)
+def wait(n):
+  time.sleep(n)
+time = 0.5
 def ask(text):
    while True:
     ask = input(text)
@@ -22,17 +23,17 @@ if ask("Do you want to know the rules?(y/n) "):
    while True:
       for rule in rules:
         print(f"* {rule}")
-        wait()
+        wait(time)
       understood = ask("Did you understand the rules?(y/n) ")
       if understood:
         break
 while True:
   print("Select difficulty:")
-  wait()
+  wait(time)
   print("- Easy(E)")
-  wait()
+  wait(time)
   print("- Normal(N)")
-  wait()
+  wait(time)
   print(f"- {Fore.RED}{Style.BRIGHT}Impossible(I)")
   level = input("$ ").lower()
   if level == "n" or level == "normal":
@@ -44,3 +45,11 @@ while True:
   if level == "i" or level == "impossible":
     print(f"You choose {Fore.RED}{Style.BRIGHT}IMPOSSIBLE{Style.RESET_ALL} difficulty!")
     break
+print("------------------------")
+print("So, let's play!")
+wait(time)
+print("...")
+print("Rock")
+print("Paper")
+print("Scissors")
+print("Shoot!")
