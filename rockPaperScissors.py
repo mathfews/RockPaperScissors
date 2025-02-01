@@ -20,6 +20,15 @@ def ask(text):
       return True
     if ask == "n":
       return False
+def scoreboard(playerScore,computerScore):
+  scoreboard = f"""
+          ╔════════════════╗
+          ║   {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}   ║
+          ╚════════════════╝
+          Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
+          Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
+          """
+  print(scoreboard)
 if ask("Do you want to know the rules?(y/n) "):
    while True:
       for rule in rules:
@@ -64,15 +73,8 @@ def whoWins(playerChoose):
           scoreboardAsk = ask("Before you leave, do you want to see the scoreboard?(y/n) ")
           if scoreboardAsk:
             print("Okay, I'll show you the scoreboard, wait a minute")
-            scoreboard = f"""
-            ╔════════════════╗
-            ║   {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}   ║
-            ╚════════════════╝
-            Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
-            Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
-            """
-            wait1()
-            print(scoreboard)
+            wait()
+            scoreboard(playerScore, computerScore)
           print("Thanks for playing!")
 
     elif computerChoose == "Paper":
@@ -86,17 +88,9 @@ def whoWins(playerChoose):
           scoreboardAsk = ask("Before you leave, do you want to see the scoreboard?(y/n) ")
           if scoreboardAsk:
             print("Okay, I'll show you the scoreboard, wait a minute")
-            scoreboard = f"""
-            ╔════════════════╗
-            ║   {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}   ║
-            ╚════════════════╝
-            Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
-            Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
-            """
-            wait1()
-            print(scoreboard)
+            wait()
+            scoreboard(playerScore, computerScore)
           print("Thanks for playing!")
-
     elif computerChoose == "Scissors":
       print(f"{Fore.YELLOW}{Style.BRIGHT}Draw{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}scissors{Style.RESET_ALL} too!")
       globals()["playerScore"] += 1
@@ -109,15 +103,8 @@ def whoWins(playerChoose):
           scoreboardAsk = ask("Before you leave, do you want to see the scoreboard?(y/n) ")
           if scoreboardAsk:
             print("Okay, I'll show you the scoreboard, wait a minute")
-            scoreboard = f"""
-            ╔════════════════╗
-            ║   {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}   ║
-            ╚════════════════╝
-            Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
-            Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
-            """
-            wait1()
-            print(scoreboard)
+            wait()
+            scoreboard(playerScore, computerScore)
           print("Thanks for playing!")
 
    if playerChoose == "Paper":
@@ -132,15 +119,8 @@ def whoWins(playerChoose):
           scoreboardAsk = ask("Before you leave, do you want to see the scoreboard?(y/n) ")
           if scoreboardAsk:
             print("Okay, I'll show you the scoreboard, wait a minute")
-            scoreboard = f"""
-            ╔════════════════╗
-            ║   {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}   ║
-            ╚════════════════╝
-            Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
-            Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
-            """
-            wait1()
-            print(scoreboard)
+            wait()
+            scoreboard(playerScore, computerScore)
           print("Thanks for playing!")
 
     elif computerChoose == "Rock":
@@ -154,15 +134,8 @@ def whoWins(playerChoose):
           scoreboardAsk = ask("Before you leave, do you want to see the scoreboard?(y/n) ")
           if scoreboardAsk:
             print("Okay, I'll show you the scoreboard, wait a minute")
-            scoreboard = f"""
-            ╔════════════════╗
-            ║   {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}   ║
-            ╚════════════════╝
-            Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
-            Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
-            """
-            wait1()
-            print(scoreboard)
+            wait()
+            scoreboard(playerScore, computerScore)
           print("Thanks for playing!")
 
     elif computerChoose == "Paper":
@@ -177,15 +150,8 @@ def whoWins(playerChoose):
           scoreboardAsk = ask("Before you leave, do you want to see the scoreboard?(y/n) ")
           if scoreboardAsk:
             print("Okay, I'll show you the scoreboard, wait a minute")
-            scoreboard = f"""
-            ╔════════════════╗
-            ║   {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}   ║
-            ╚════════════════╝
-            Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
-            Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
-            """
-            wait1()
-            print(scoreboard)
+            wait()
+            scoreboard(playerScore, computerScore)
           print("Thanks for playing!")
 
    if playerChoose == "Rock":
@@ -200,15 +166,8 @@ def whoWins(playerChoose):
           scoreboardAsk = ask("Before you leave, do you want to see the scoreboard?(y/n) ")
           if scoreboardAsk:
             print("Okay, I'll show you the scoreboard, wait a minute")
-            scoreboard = f"""
-            ╔════════════════╗
-            ║   {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}   ║
-            ╚════════════════╝
-            Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
-            Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
-            """
-            wait1()
-            print(scoreboard)
+            wait()
+            scoreboard(playerScore, computerScore)
           print("Thanks for playing!")
 
     elif computerChoose == "Scissors":
@@ -222,15 +181,8 @@ def whoWins(playerChoose):
           scoreboardAsk = ask("Before you leave, do you want to see the scoreboard?(y/n) ")
           if scoreboardAsk:
             print("Okay, I'll show you the scoreboard, wait a minute")
-            scoreboard = f"""
-            ╔════════════════╗
-            ║   {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}   ║
-            ╚════════════════╝
-            Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
-            Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
-            """
-            wait1()
-            print(scoreboard)
+            wait()
+            scoreboard(playerScore, computerScore)
           print("Thanks for playing!")
 
     elif computerChoose == "Rock":
@@ -245,15 +197,8 @@ def whoWins(playerChoose):
           scoreboardAsk = ask("Before you leave, do you want to see the scoreboard?(y/n) ")
           if scoreboardAsk:
             print("Okay, I'll show you the scoreboard, wait a minute")
-            scoreboard = f"""
-            ╔════════════════╗
-            ║   {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}   ║
-            ╚════════════════╝
-            Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
-            Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
-            """
-            wait1()
-            print(scoreboard)
+            wait()
+            scoreboard(playerScore, computerScore)
           print("Thanks for playing!")
 
 def impossibleToWin(playerChoose):
@@ -269,15 +214,8 @@ def impossibleToWin(playerChoose):
         scoreboardAsk = ask("Before you leave, do you want to see the scoreboard?(y/n) ")
         if scoreboardAsk:
           print("Okay, I'll show you the scoreboard, wait a minute")
-          scoreboard = f"""
-          ╔════════════════╗
-          ║ {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}         ║
-          ╚════════════════╝
-          Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
-          Computer:  {Fore.RED}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
-          """
-          wait1()
-          print(scoreboard)
+          wait()
+          scoreboard(playerScore,computerScore)
         print("Thanks for playing!")
   if playerChoose == "Paper":
     computerChoose = "Scissors"
@@ -291,15 +229,8 @@ def impossibleToWin(playerChoose):
         scoreboardAsk = ask("Before you leave, do you want to see the scoreboard?(y/n) ")
         if scoreboardAsk:
           print("Okay, I'll show you the scoreboard, wait a minute")
-          scoreboard = f"""
-          ╔════════════════╗
-          ║ {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}         ║
-          ╚════════════════╝
-          Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
-          Computer:  {Fore.RED}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
-          """
-          wait1()
-          print(scoreboard)
+          wait()
+          scoreboard(playerScore,computerScore)
         print("Thanks for playing!")
   if playerChoose == "Scissors":
     computerChoose = "Rock"
@@ -313,15 +244,8 @@ def impossibleToWin(playerChoose):
         scoreboardAsk = ask("Before you leave, do you want to see the scoreboard?(y/n) ")
         if scoreboardAsk:
           print("Okay, I'll show you the scoreboard, wait a minute")
-          scoreboard = f"""
-          ╔════════════════╗
-          ║ {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}         ║
-          ╚════════════════╝
-          Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
-          Computer:  {Fore.RED}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
-          """
-          wait1()
-          print(scoreboard)
+          wait()
+          scoreboard(playerScore,computerScore)
         print("Thanks for playing!")
 def easyToWin(playerChoose):
   if playerChoose == "Rock":
@@ -336,15 +260,8 @@ def easyToWin(playerChoose):
         scoreboardAsk = ask("Before you leave, do you want to see the scoreboard?(y/n) ")
         if scoreboardAsk:
           print("Okay, I'll show you the scoreboard, wait a minute")
-          scoreboard = f"""
-          ╔════════════════╗
-          ║ {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}         ║
-          ╚════════════════╝
-          Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
-          Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
-          """
-          wait1()
-          print(scoreboard)
+          wait()
+          scoreboard(playerScore,computerScore)
         print("Thanks for playing!")
   if playerChoose == "Paper":
     computerChoose = "Rock"
@@ -358,15 +275,8 @@ def easyToWin(playerChoose):
         scoreboardAsk = ask("Before you leave, do you want to see the scoreboard?(y/n) ")
         if scoreboardAsk:
           print("Okay, I'll show you the scoreboard, wait a minute")
-          scoreboard = f"""
-          ╔════════════════╗
-          ║ {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}         ║
-          ╚════════════════╝
-          Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
-          Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
-          """
-          wait1()
-          print(scoreboard)
+          wait()
+          scoreboard(playerScore,computerScore)
         print("Thanks for playing!")
   if playerChoose == "Scissors":
     computerChoose = "Paper"
@@ -380,15 +290,8 @@ def easyToWin(playerChoose):
         scoreboardAsk = ask("Before you leave, do you want to see the scoreboard?(y/n) ")
         if scoreboardAsk:
           print("Okay, I'll show you the scoreboard, wait a minute")
-          scoreboard = f"""
-          ╔════════════════╗
-          ║ {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}         ║
-          ╚════════════════╝
-          Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
-          Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
-          """
-          wait1()
-          print(scoreboard)
+          wait()
+          scoreboard(playerScore,computerScore)
         print("Thanks for playing!")
 while level == "n" or level == "normal":
   print("So, let's play! ....")
