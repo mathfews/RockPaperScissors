@@ -328,7 +328,7 @@ def easyToWin(playerChoose):
             exit()
   if playerChoose == "scissors":
     computerChoose = "paper"
-    print(f"{Fore.YELLOW}{Style.BRIGHT}You won{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}rock{Style.RESET_ALL}!")
+    print(f"{Fore.YELLOW}{Style.BRIGHT}You won{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}paper{Style.RESET_ALL}!")
     globals()["playerScore"] += 1
     while True:
       restart = ask("Do you want to play again?(y/n) ")
