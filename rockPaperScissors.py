@@ -66,7 +66,7 @@ def whoWins(playerChoose):
             print("Okay, I'll show you the scoreboard, wait a minute")
             scoreboard = f"""
             ╔════════════════╗
-            ║ 🏆  {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL} ║
+            ║   {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}   ║
             ╚════════════════╝
             Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
             Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
@@ -88,7 +88,7 @@ def whoWins(playerChoose):
             print("Okay, I'll show you the scoreboard, wait a minute")
             scoreboard = f"""
             ╔════════════════╗
-            ║ 🏆  {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL} ║
+            ║   {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}   ║
             ╚════════════════╝
             Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
             Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
@@ -111,7 +111,7 @@ def whoWins(playerChoose):
             print("Okay, I'll show you the scoreboard, wait a minute")
             scoreboard = f"""
             ╔════════════════╗
-            ║ 🏆  {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL} ║
+            ║   {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}   ║
             ╚════════════════╝
             Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
             Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
@@ -134,7 +134,7 @@ def whoWins(playerChoose):
             print("Okay, I'll show you the scoreboard, wait a minute")
             scoreboard = f"""
             ╔════════════════╗
-            ║ 🏆  {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL} ║
+            ║   {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}   ║
             ╚════════════════╝
             Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
             Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
@@ -156,7 +156,7 @@ def whoWins(playerChoose):
             print("Okay, I'll show you the scoreboard, wait a minute")
             scoreboard = f"""
             ╔════════════════╗
-            ║ 🏆  {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL} ║
+            ║   {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}   ║
             ╚════════════════╝
             Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
             Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
@@ -179,7 +179,7 @@ def whoWins(playerChoose):
             print("Okay, I'll show you the scoreboard, wait a minute")
             scoreboard = f"""
             ╔════════════════╗
-            ║ 🏆  {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL} ║
+            ║   {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}   ║
             ╚════════════════╝
             Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
             Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
@@ -202,7 +202,7 @@ def whoWins(playerChoose):
             print("Okay, I'll show you the scoreboard, wait a minute")
             scoreboard = f"""
             ╔════════════════╗
-            ║ 🏆  {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL} ║
+            ║   {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}   ║
             ╚════════════════╝
             Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
             Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
@@ -224,7 +224,7 @@ def whoWins(playerChoose):
             print("Okay, I'll show you the scoreboard, wait a minute")
             scoreboard = f"""
             ╔════════════════╗
-            ║ 🏆  {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL} ║
+            ║   {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}   ║
             ╚════════════════╝
             Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
             Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
@@ -247,7 +247,7 @@ def whoWins(playerChoose):
             print("Okay, I'll show you the scoreboard, wait a minute")
             scoreboard = f"""
             ╔════════════════╗
-            ║ 🏆  {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL} ║
+            ║   {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}   ║
             ╚════════════════╝
             Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
             Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
@@ -271,7 +271,7 @@ def impossibleToWin(playerChoose):
           print("Okay, I'll show you the scoreboard, wait a minute")
           scoreboard = f"""
           ╔════════════════╗
-          ║ 🏆  {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL} ║
+          ║ {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}         ║
           ╚════════════════╝
           Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
           Computer:  {Fore.RED}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
@@ -293,7 +293,7 @@ def impossibleToWin(playerChoose):
           print("Okay, I'll show you the scoreboard, wait a minute")
           scoreboard = f"""
           ╔════════════════╗
-          ║ 🏆  {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL} ║
+          ║ {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}         ║
           ╚════════════════╝
           Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
           Computer:  {Fore.RED}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
@@ -315,7 +315,7 @@ def impossibleToWin(playerChoose):
           print("Okay, I'll show you the scoreboard, wait a minute")
           scoreboard = f"""
           ╔════════════════╗
-          ║ 🏆  {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL} ║
+          ║ {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}         ║
           ╚════════════════╝
           Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
           Computer:  {Fore.RED}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
@@ -327,7 +327,7 @@ def easyToWin(playerChoose):
   if playerChoose == "Rock":
     computerChoose = "Scissors"
     print(f"{Fore.YELLOW}{Style.BRIGHT}You won{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}Scissors{Style.RESET_ALL}!")
-    globals()["computerScore"] += 1
+    globals()["playerScore"] += 1
     while True:
       restart = ask("Do you want to play again?(y/n) ")
       if restart:
@@ -338,7 +338,7 @@ def easyToWin(playerChoose):
           print("Okay, I'll show you the scoreboard, wait a minute")
           scoreboard = f"""
           ╔════════════════╗
-          ║ 🏆  {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL} ║
+          ║ {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}         ║
           ╚════════════════╝
           Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
           Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
@@ -349,7 +349,7 @@ def easyToWin(playerChoose):
   if playerChoose == "Paper":
     computerChoose = "Rock"
     print(f"{Fore.YELLOW}{Style.BRIGHT}You won{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}rock{Style.RESET_ALL}!")
-    globals()["computerScore"] += 1
+    globals()["playerScore"] += 1
     while True:
       restart = ask("Do you want to play again?(y/n) ")
       if restart:
@@ -360,7 +360,7 @@ def easyToWin(playerChoose):
           print("Okay, I'll show you the scoreboard, wait a minute")
           scoreboard = f"""
           ╔════════════════╗
-          ║ 🏆  {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL} ║
+          ║ {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}         ║
           ╚════════════════╝
           Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
           Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
@@ -371,7 +371,7 @@ def easyToWin(playerChoose):
   if playerChoose == "Scissors":
     computerChoose = "Paper"
     print(f"{Fore.YELLOW}{Style.BRIGHT}You won{Style.RESET_ALL}, I choose {Fore.YELLOW}{Style.BRIGHT}rock{Style.RESET_ALL}!")
-    globals()["computerScore"] += 1
+    globals()["playerScore"] += 1
     while True:
       restart = ask("Do you want to play again?(y/n) ")
       if restart:
@@ -382,7 +382,7 @@ def easyToWin(playerChoose):
           print("Okay, I'll show you the scoreboard, wait a minute")
           scoreboard = f"""
           ╔════════════════╗
-          ║ 🏆  {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL} ║
+          ║ {Fore.YELLOW}{Style.BRIGHT}SCOREBOARD{Style.RESET_ALL}         ║
           ╚════════════════╝
           Player :  {Fore.YELLOW}{Style.BRIGHT}{playerScore}{Style.RESET_ALL}
           Computer:  {Fore.YELLOW}{Style.BRIGHT}{computerScore}{Style.RESET_ALL}
